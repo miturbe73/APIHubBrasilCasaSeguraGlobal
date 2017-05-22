@@ -1,0 +1,14 @@
+spring:
+  profiles: devel
+
+info:
+  name: ${project.artifactId}
+  version: ${project.version}
+  contact: maria.iturbe@tinamica.com
+
+---
+server:
+  port: 8105
+
+eureka.client.serviceUrl.defaultZone: http://10.152.149.144:8761/eureka/
+spring.application.name: APIHubBrasilCasaSeguraGlobal
